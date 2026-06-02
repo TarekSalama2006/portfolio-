@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Success</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container1">
+
+  <!-- التحميل -->
+    <div class="loader-box" id="loaderBox">
+
+      <div class="loader"></div>
+
+      <h2>Processing Your Order...</h2>
+
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <p>Please wait a moment</p>
+
+    </div>
+
+     <!-- انتهاء -->
+    <div class="success-box" id="successBox">
+
+      <div class="checkmark">✓</div>
+
+      <h1>Payment Successful</h1>
+
+      <p>
+        Your order has been confirmed successfully.
+      </p>
+
+      <span>
+        Estimated delivery time: 1 week
+      </span>
+
+      <button id="home">
+        Back To Home
+      </button>
+
+    </div>
+
+  </div>
+
+<script>
+
+setTimeout(() => {
+
+  document.getElementById("loaderBox").style.display = "none";
+
+  document.getElementById("successBox").style.display = "flex";
+
+}, 4000);
+   document.getElementById('home').addEventListener('click', function() {
+    window.location.href = 'home page.html';    
+});
+</script>
+
+</body>
+</html>

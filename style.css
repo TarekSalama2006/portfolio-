@@ -1,0 +1,1461 @@
+/* =========================
+   إعدادات عامة
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =========================
+ناف
+========================= */
+body{
+  background:#050505;
+  color:white;
+}
+/* الاستعجاد*/
+                             
+.loading-screen{
+    width:100%;
+    height:100vh;
+    background:#0d0d0d;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+    position:relative;
+}
+
+.bg-glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(255,214,0,.08);
+
+    border-radius:50%;
+    filter:blur(120px);
+}
+
+.loading-box{
+    width:420px;
+
+    background:rgba(20,20,20,.75);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+
+    padding:50px 35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.4),
+    0 0 30px rgba(255,214,0,.05);
+}
+
+.logo{
+    width:90px;
+    margin-bottom:25px;
+}
+
+.loading-box h1{
+    color:#fff;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.loading-box h1 span{
+    color:#ffd600;
+}
+
+.loading-box p{
+    color:#999;
+    margin-bottom:35px;
+}
+
+.progress-bar{
+    width:100%;
+    height:10px;
+
+    background:#1f1f1f;
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.progress{
+    width:0%;
+    height:100%;
+
+    background:#ffd600;
+    border-radius:20px;
+
+    animation:load 4s linear forwards;
+}
+
+.loading-text{
+    margin-top:18px;
+    color:#aaa;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+@keyframes load{
+    100%{
+        width:100%;
+    }
+}
+.icons a{
+    color:#ffd600 ;
+    transition: 2s;
+}
+.icons a:hover{
+color: rgb(255, 140, 0);
+}
+/*icon img*/
+.icon a{
+    color: rgb(0, 0, 0);
+    background-color: #aaa;
+transition: 2s;
+float: right;
+text-decoration: none;
+}
+.icon a:hover{
+    color: #ffd600;
+
+}
+.icons a{
+    text-decoration: none;
+}
+/* log */
+/* Welcome Text */
+
+.log1{
+    position:absolute;
+    top:80px;
+    left:80px;
+
+    font-size:55px;
+    width:500px;
+
+    line-height:80px;
+    color:white;
+}
+
+.log1::after{
+    content:'';
+    display:block;
+
+    width:120px;
+    height:5px;
+
+    background:#ffd600;
+    border-radius:20px;
+
+    margin-top:20px;
+}
+
+/* Logo */
+
+.log2{
+    position:absolute;
+    top:300px;
+    left:130px;
+
+    width:220px;
+    border-radius:30px;
+
+    box-shadow:
+    0 0 30px rgba(255,214,0,.15),
+    0 20px 40px rgba(0,0,0,.5);
+}
+
+/* Login Box */
+
+.log3{
+    width:420px;
+    padding:45px;
+
+    background:rgba(20,20,20,.8);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+
+    position:absolute;
+    right:120px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.45),
+    0 0 25px rgba(255,214,0,.05);
+}
+
+.log3 h1{
+    text-align:center;
+    margin-bottom:40px;
+
+    color:#ffd600;
+    font-size:38px;
+}
+
+/* Inputs */
+
+.log3 input{
+    width:100%;
+    margin-top:12px;
+
+    padding:16px;
+
+    border:none;
+    outline:none;
+
+    border-radius:15px;
+
+    background:#1c1c1c;
+    color:white;
+
+    transition:.3s;
+}
+
+.log3 input:focus{
+    border:1px solid rgba(255,214,0,.4);
+
+    box-shadow:
+    0 0 15px rgba(255,214,0,.1);
+}
+
+/* Forget Password */
+
+.log3 a{
+    color:#ffd600;
+    text-decoration:none;
+}
+
+.log3 a:hover{
+    text-decoration:underline;
+}
+
+/* Button */
+
+#loginBtn{
+    width:100%;
+    margin-top:35px;
+
+    padding:17px;
+
+    border:none;
+    border-radius:15px;
+
+    background:#ffd600;
+    color:black;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+#loginBtn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 25px rgba(255,214,0,.25);
+}
+
+/* Responsive */
+
+@media(max-width:950px){
+
+    .log1{
+        position:relative;
+        top:40px;
+        left:0;
+
+        width:100%;
+        text-align:center;
+
+        font-size:38px;
+        line-height:60px;
+    }
+
+    .log1::after{
+        margin:auto;
+        margin-top:20px;
+    }
+
+    .log2{
+        position:relative;
+
+        top:70px;
+        left:50%;
+
+        transform:translateX(-50%);
+    }
+
+    .log3{
+        position:relative;
+
+        right:auto;
+        top:120px;
+
+        transform:none;
+
+        width:90%;
+        margin:auto;
+    }
+
+    body{
+        height:auto;
+        padding-bottom:100px;
+        overflow:auto;
+    }
+}
+
+
+
+/* بار */
+.navbar{
+  width:95%;
+  margin:auto;
+  margin-top:20px;
+  padding:20px 40px;
+  background:#0d0d0d;
+  border:1px solid #1a1a1a;
+  border-radius:20px;
+  display:flex;
+  /* position: fixed; */
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#ffd000;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#ffd000;
+}
+
+.icons{
+  display:flex;
+  gap:20px;
+  font-size:20px;
+}
+
+.hero{
+  width:95%;
+  margin:auto;
+  margin-top:40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+  background-image: url(image/back\ ground.jpeg);
+}
+
+.hero-text{
+  width:50%;
+}
+
+.small-title{
+  color:#ffd000;
+  letter-spacing:3px;
+  margin-bottom:20px;
+}
+
+.hero-text h1{
+  font-size:70px;
+  line-height:1.1;
+}
+
+.hero-text h1 span{
+  color:#ffd000;
+}
+
+/* ازرار التنقل  */
+.buttons{
+  margin-top:30px;
+  display:flex;
+  gap:20px;
+}
+
+.yellow-btn{
+  background:#ffd000;
+  color:black;
+  border:none;
+  padding:15px 35px;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.dark-btn{
+  background:transparent;
+  border:1px solid #333;
+  color:white;
+  padding:15px 35px;
+  border-radius:10px;
+  cursor:pointer;
+}
+/* ايقونات */
+.features{
+  display:flex;
+  gap:40px;
+  margin-top:40px;
+}
+
+.features div{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.features i{
+  color:#ffd000;
+  font-size:20px;
+}
+
+.hero-image{
+  width:50%;
+}
+
+.hero-image img{
+  width:100%;
+  filter:drop-shadow(0 0 25px #ffd00055);
+}
+
+.products{
+  width:95%;
+  margin:auto;
+  margin-top:70px;
+}
+
+.products h2{
+  margin-bottom:30px;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(20px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#0d0d0d;
+  border:1px solid #1f1f1f;
+  border-radius:20px;
+  padding:20px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:#ffd000;
+}
+
+.card img{
+  width:100%;
+}
+
+.card h3{
+  margin-top:15px;
+}
+
+.card p{
+  margin-top:10px;
+  color:#ffd000;
+  font-weight:bold;
+}
+
+
+.header_resize {
+	margin:0 auto;
+	padding:0 0 32px;
+	width:960px;
+}
+.logo {
+	padding:0;
+	float:left;
+	width:auto;
+	height:118px;
+}
+h1 {
+	margin:0;
+	padding:32px 0 0;
+	font-size:50px;
+	font-weight:normal;
+	line-height:1.2em;
+	text-transform:none;
+}
+h1 a, h1 a:hover {
+	color:#000000;
+	text-decoration:none;
+}
+h1 span {
+	color:#ff7300;
+}
+h1 small {
+	display:block;
+	margin:-4px 0;
+	padding-left:160px;
+	font-size:20px;
+	line-height:1.2em;
+	letter-spacing:normal;
+	text-transform:none;
+	color:#450e0e;
+}
+.slider {
+	padding:0;
+}
+.rss {
+	padding:18px 20px 0 0;
+	float:right;
+	width:auto;
+}
+.rss p {
+	margin:0;
+	padding:0;
+	float:right;
+	width:auto;
+	color:#f78181;
+	font-size:13px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+.rss a {
+	color:#fff;
+	text-decoration:none;
+}
+.rss a:hover {
+	text-decoration:underline;
+}
+.rss img {
+	margin:-3px 0 -3px 6px;
+	border:none;
+}
+/* =========================
+   الهيرو
+========================= */
+
+.title{
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 260px;
+    padding-left: 100px;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(0,0,0,0.95),
+        rgba(0,0,0,0.55)
+    ),
+    url(image/back\ ground.jpeg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.title h1{
+    font-size: 90px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+}
+
+.title span{
+    color: #ffd000;
+}
+
+.title p{
+    width: 650px;
+
+    font-size: 22px;
+
+    color: #bdbdbd;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+/* =========================
+   الأزرار
+========================= */
+
+.btns{
+    overflow: hidden;
+}
+
+.btn1{
+    float: left;
+
+    padding: 16px 38px;
+
+    background-color: #ffd000;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 14px;
+
+    font-weight: bold;
+
+    margin-right: 20px;
+
+    transition: 0.3s;
+}
+
+.btn1:hover{
+    transform: translateY(-5px);
+}
+
+.btn2{
+    float: left;
+
+    padding: 16px 38px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.btn2:hover{
+    border-color: #ffd000;
+
+    color: #ffd000;
+}
+
+/* =========================
+   المنتجات
+========================= */
+
+.container{
+    width: 1000px;
+    height: auto;
+    margin: 140px auto;
+   text-align: center;
+    overflow: hidden;
+}
+
+/* الكرت */
+
+.card{
+    width: 460px;
+    height: 650px;
+
+    background-color: #151515;
+
+    float: left;
+
+    margin-left: 25px;
+    margin-bottom: 35px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 5px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 50px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    border-color: #ffd000;
+
+    box-shadow: 0 0 25px rgba(255,208,0,0.25);
+}
+
+/* صورة المنتج */
+
+.card-top{
+    width: 90%;
+    margin: 0px auto;
+
+    background-color: #1e1e1e;
+}
+
+.card-top img{
+    width: 60%;
+    margin-top: 20px;
+    transition: 0.3s;
+
+}
+
+.card:hover .card-top img{
+    transform: scale(1.05);
+}
+/* الظل */
+
+.card-top{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card-top img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .6s;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.2)
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .5s ease;
+    backdrop-filter: blur(3px);
+}
+
+.card-top:hover img{
+    transform: scale(1.1);
+}
+
+.card-top:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overlay .icon{
+    display: flex;
+    gap: 20px;
+}
+
+.overlay .icon a{
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    color: #fff;
+    font-size: 22px;
+
+    transition: .3s;
+}
+
+.overlay .icon a:hover{
+    background: #ffd700;
+    color: #111;
+    transform: translateY(-8px);
+}
+
+/* المحتوى */
+
+.card-content{
+    padding: 20px;
+}
+/* خانه id */
+.card-content span{
+    color: #eeff00;
+
+    font-size: 12px;
+
+    display: block;
+
+    margin-bottom: 9px;
+}
+
+.card-content h2{
+    color: #ffd000;
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.card-content p{
+    color: #bdbdbd;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+/* المواصفات */
+
+.specs{
+    list-style: none;
+}
+
+.specs li{
+    color: #888;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+/* السعر */
+.price{
+    color: #888;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* زر الشراء */
+
+.card-content button{
+    width: 100%;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #ffd000;
+
+    color: black;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card-content button:hover{
+    background-color: white;
+}
+
+/* =========================
+   قسم الصيانة
+========================= */
+
+.repair{
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 120px 80px;
+
+    background-color: #111;
+}
+
+/* النص */
+
+.repair-text{
+    width: 45%;
+
+    float: left;
+
+    margin-top: 70px;
+}
+
+.repair-text span{
+    color: #ffd000;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+}
+
+.repair-text h1{
+    font-size: 65px;
+
+    margin: 20px 0;
+}
+
+.repair-text h1 span{
+    color: #ffd000;
+}
+
+.repair-text p{
+    color: #aaa;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+}
+
+.repair-text ul{
+    list-style: none;
+
+    margin-bottom: 35px;
+}
+
+.repair-text ul li{
+    margin-bottom: 15px;
+
+    color: #ccc;
+}
+
+.repair-text a{
+    padding: 15px 35px;
+
+    background-color: #ffd000;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+}
+
+/* الصورة */
+
+.repair-image{
+    width: 45%;
+
+    float: right;
+}
+
+.repair-image img{
+    width: 100%;
+
+    border-radius: 30px;
+}
+
+/* تنظيف الفلوت */
+
+.clr{
+    clear: both;
+}
+/* =========================
+   قسم الدفع
+========================= */
+/* مربع التحميل */
+
+.loader-box,
+.success-box{
+    width:420px;
+    background:#141414;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    backdrop-filter:blur(20px);
+    box-shadow:0 0 40px rgba(0,0,0,0.4);
+    margin: auto;
+    margin-top: 300px;
+}
+
+/* التحميل */
+
+.loader{
+    width:90px;
+    height:90px;
+    border:6px solid #2a2a2a;
+    border-top:6px solid #ffd600;
+    border-radius:50%;
+    margin:auto;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.loader-box h2{
+    margin-top:30px;
+    font-size:28px;
+}
+
+.loader-box p{
+    margin-top:15px;
+    color:#999;
+}
+
+/*  خط التحميل */
+
+.progress-bar{
+    width:100%;
+    height:10px;
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:25px;
+}
+
+.progress{
+    width:0%;
+    height:100%;
+    background:#ffd600;
+    border-radius:20px;
+    animation:load 4s linear forwards;
+}
+
+@keyframes load{
+    100%{
+        width:100%;
+    }
+}
+
+/* تم */
+
+.success-box{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    animation:show 0.5s ease;
+}
+
+@keyframes show{
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+/* الصح الخلفيه */
+.checkmark{
+    width:100px;
+    height:100px;
+    background:#ffd600;
+    color:black;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:25px;
+    box-shadow:0 0 30px rgba(255,214,0,0.4);
+}
+
+.success-box h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.success-box p{
+    color:#aaa;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.success-box span{
+    color:#ffd600;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+button{
+    padding:16px 35px;
+    border:none;
+    border-radius:15px;
+    background:#ffd600;
+    color:black;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,214,0,0.3);
+}
+/* قسم by */
+.checkout-container{
+    width:100%;
+    padding:60px 80px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* كرت */
+
+.card{
+    background:#141414;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
+
+.card h2{
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+/* ادخال بيانات */
+
+.input-group{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    margin-bottom:20px;
+    padding:18px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:#1d1d1d;
+    color:white;
+    border:1px solid transparent;
+    transition:0.3s;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#ffd600;
+}
+
+textarea{
+    height:140px;
+    resize:none;
+}
+
+/* زر */
+
+
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,214,0,0.3);
+}
+
+/* Products */
+
+.product{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+    padding-bottom:20px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.product img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.product h3{
+    font-size:18px;
+}
+
+.product p{
+    color:#999;
+    font-size:14px;
+}
+
+.product span{
+    margin-left:auto;
+    color:#ffd600;
+    font-weight:700;
+}
+
+/* Total */
+
+.total{
+    margin-top:30px;
+}
+
+.total div{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.final-total{
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.final-total h2{
+    color:#ffd600;
+}
+
+/* =========================
+  التواصل
+========================= */
+
+.contact{
+    width:95%;
+
+    margin:120px auto;
+
+    padding:90px 70px;
+
+    background:#0f0f0f;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    box-shadow:0 0 35px rgba(0,0,0,0.4);
+}
+
+/* النص */
+
+.contact-text{
+    width:45%;
+
+    float:left;
+}
+
+.contact-text span{
+    color:#ffd000;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    display:block;
+
+    margin-bottom:20px;
+}
+
+.contact-text h1{
+    font-size:70px;
+
+    margin-bottom:25px;
+}
+
+.contact-text h1 b{
+    color:#ffd000;
+}
+
+.contact-text p{
+    color:#aaa;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+}
+
+/* البوكسات */
+
+.contact-box{
+    width:90%;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+    padding:20px;
+
+    background:#151515;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.contact-box i{
+    float:left;
+
+    font-size:30px;
+
+    color:#ffd000;
+
+    margin-top:10px;
+}
+
+.contact-info{
+    float:left;
+
+    margin-left:20px;
+}
+
+.contact-info h3{
+    color:#ffd000;
+
+    margin-bottom:8px;
+}
+
+.contact-info p{
+    margin:0;
+
+    color:#ccc;
+}
+
+/* الفورم */
+
+.contact-form{
+    width:45%;
+
+    float:right;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:15px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    outline:none;
+}
+
+.contact-form textarea{
+    height:180px;
+
+    resize:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#ffd000;
+}
+
+.contact-form button{
+    width:220px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#ffd000;
+
+    color:black;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:white;
+}
+
+/* حل مسكله الاباء والابناء*/
+
+.clr{
+    clear:both;
+}
+
+
+
+
+/* =====  pseudo elements الخط التحت التايتل تبع الناف ===== */
+.navbar::after,
+.features::after,
+.buttons::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+nav a::after{
+    content:"";
+    display:block;
+    width:0;
+    height:2px;
+    background:#ffd600;
+    transition:.3s;
+}
+nav a:hover::after{
+    width:100%;
+}
+
+#loginBtn::before{
+    content:"➜ ";
+}
+
+.card h3::before{
+    content:"★ ";
+    color:#ffd600;
+}
+
+/* ===== float  navbar ===== */
+nav{
+    float:left;
+}
+nav a{
+    float:left;
+    margin-right:30px;
+}
+.icons{
+    float:right;
+}
+.icons a{
+    float:left;
+    margin-left:20px;
+}

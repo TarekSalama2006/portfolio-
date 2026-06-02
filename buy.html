@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap Zone Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="white">LAP</span>
+            <span class="yellow">ZONE</span>
+        </div>
+
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="laptop page.html">Laptops</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="laptop page.html">Laptop</a>
+            <a href="phone page.html">Phone</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about us.html">About Us</a>
+        </nav>
+         <div class="icons">
+   <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> 
+   <a href="login.html"><i class="fa-regular fa-user"></i></a> 
+    <a href="buy.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+    </header>
+
+    <section class="checkout-container">
+
+        <div class="left-side">
+
+            <div class="card">
+                <h2>Billing Details</h2>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+
+                <input type="email" placeholder="Email Address">
+
+                <div class="input-group">
+                    <input type="text" placeholder="Country">
+                    <input type="text" placeholder="City">
+                </div>
+
+                <input type="text" placeholder="Street Address">
+
+                <textarea placeholder="Additional Notes"></textarea>
+
+                <button class="btn">
+                    Continue To Payment
+                </button>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+
+            <div class="card">
+                <h2>MY BA</h2>
+
+                <div class="product">
+                    <img src="image/asus.jpeg">
+
+                    <div>
+                        <h3>ASUS ROG Laptop</h3>
+                        <p>Gaming Laptop</p>
+                    </div>
+
+                    <span>$1299</span>
+                </div>
+
+                <div class="product">
+                    <img src="image/gamin mouse 1.jpeg">
+
+                    <div>
+                        <h3>Gaming Mouse</h3>
+                        <p>Accessories</p>
+                    </div>
+
+                    <span>$49</span>
+                </div>
+
+                <div class="total">
+                    <div>
+                        <p>Subtotal</p>
+                        <span>$1348</span>
+                    </div>
+
+                    <div>
+                        <p>Shipping</p>
+                        <span>Free</span>
+                    </div>
+
+                    <div class="final-total">
+                        <h3>Total</h3>
+                        <h2>$1348</h2>
+
+                             <button id="btn" class="btn">buy now</button>
+                    </div>
+                
+                </div>
+      
+            </div>
+        
+        </div>
+
+    </section>
+<script>
+
+       document.getElementById('btn').addEventListener('click', function() {
+    window.location.href = 'end by.html';    
+});
+</script>
+</body>
+</html>
