@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONOVA-GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo/file_00000000a48c71f48dfceedc4e0fcb00.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="menu">
+        <li class="brand"><i class="fa-solid fa-clock"></i> CHRONOVA</li>
+
+        <li>
+            <a href="home.html" class="active" target="_blank"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li>
+            <a href="collection.html"><i class="fa-solid fa-gem"></i> Collection <span class="arrow">▾</span></a>
+
+            <ul class="submenu">
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="patek philippe.html">Patek Philipe</a></li>
+                <li><a href="cartier.html">cartier</a></li>
+                
+            </ul>
+        </li>
+
+       
+
+        <li>
+            <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        </li>
+
+        <li>
+            <a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About As</a>
+        </li>
+
+        <li>
+            <a href="contactus.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li>
+
+    <li class="cart" onclick="window.location.href='buy.html'"><i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span></li>
+    </ul>
+   <section class="hero">
+<H1> TREND-COLLECTION</H1>
+</section>
+
+   
+    <div class="gallery">
+
+        <!-- الدائرة الوسطى - هون رح تظهر المواصفات -->
+        <div class="center-circle">
+            <p class="placeholder">Click a watch</p>
+        </div>
+
+        <!-- كل صورة فيها data-name و data-price
+             هاد هو المكان اللي بتحط فيه مواصفات كل ساعة -->
+
+        <div class="item" data-name="Rolex Submariner" data-price="$8,500">
+            <img src="img/ROLEX/0c6c54c0-49f5-40b5-b008-8e6ac624cdb4.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Cartier Tank" data-price="$6,200">
+            <img src="img/ROLEX/1c5e4808-6d6b-4fdd-9248-8e3dccc37bcb.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Patek Philippe" data-price="$32,000">
+            <img src="img/Patek Philippe/301b0dde-c0e5-49b8-ad9c-fc878c05dea2.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Cartier" data-price="$24,500">
+            <img src="img/Cartier/08d3cfa8-9416-49d1-92b0-70a06264e4ba.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Rolex Daytona" data-price="$15,000">
+            <img src="img/ROLEX/2ddb237e-94a0-4237-98d3-df3312fdc481.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Cartier Santos" data-price="$7,800">
+            <img src="img/Cartier/4f718854-7561-44db-b7a8-6e3781da5920.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Patek Nautilus" data-price="$45,000">
+            <img src="img/Patek Philippe/3e485f5d-2a66-4a3a-9b4c-a43a41240238.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="AP Royal Oak" data-price="$28,000">
+            <img src="img/ROLEX/4de3762a-1ab0-434d-9f4a-673edf7e18f5.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Rolex GMT" data-price="$11,200">
+            <img src="img/ROLEX/52392bd1-cf79-415f-bf34-52549639d85a.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Cartier Ballon" data-price="$9,300">
+            <img src="img/Cartier/c603744e-6cf0-47e9-a48d-29b5593b85c4.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="Patek Calatrava" data-price="$22,000">
+            <img src="img/Patek Philippe/5352eef3-fbf8-4c1e-a0c6-78bc3c8a7a7e.jpeg" alt="">
+        </div>
+
+        <div class="item" data-name="patek Philippe" data-price="$26,500">
+            <img src="img/Patek Philippe/7a23fbe9-6144-4705-b45a-66b18c2512b3.jpeg" alt="">
+        </div>
+
+    </div>
+v<footer class="footer">
+ <div>
+  <h2>CHRONOVA</h2>
+  <p>Luxury watches. Timeless elegance.</p>
+ </div>
+ <div>
+  <h3>Contact</h3>
+  <p><i class="fa-solid fa-phone"></i> +963 980 364 320</p>
+  <p><i class="fa-solid fa-envelope"></i> tareksalama2006@google.com</p>
+ </div>
+  <div class="social">
+ <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+ <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+ </div>
+ <p>© 2026 CHRONOVA. All Rights Reserved.</p>
+</footer>
+   
+
+
+    <script src="script3.js"></script>
+
+</body>
+</html>

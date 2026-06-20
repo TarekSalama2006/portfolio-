@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONOVA-HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo/file_00000000a48c71f48dfceedc4e0fcb00.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <ul class="menu">
+        <li class="brand"><i class="fa-solid fa-clock"></i> CHRONOVA</li>
+
+        <li>
+            <a href="home.html" class="active" target="_blank"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li>
+            <a href="collection.html"><i class="fa-solid fa-gem"></i> Collection <span class="arrow">▾</span></a>
+
+            <ul class="submenu">
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="patek philippe.html">Patek Philipe</a></li>
+                <li><a href="cartier.html">cartier</a></li>
+                
+            </ul>
+        </li>
+
+       
+
+        <li>
+            <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        </li>
+
+        <li>
+            <a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About As</a>
+        </li>
+
+        <li>
+            <a href="contactus.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li>
+
+    <li class="cart" onclick="window.location.href='buy.html'"><i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span></li>
+    </ul>
+
+    <!-- =========================================
+         1) HERO SECTION
+    ========================================= -->
+    <section class="home-hero">
+        <div class="home-hero-overlay"></div>
+        <div class="home-hero-content">
+            <span class="home-hero-tag">LUXURY WATCHES</span>
+            <h1>TIMELESS <span>ELEGANCE</span></h1>
+            <p>Discover the world's finest timepieces, crafted with precision and passion for those who demand nothing less than perfection.</p>
+            <div class="home-hero-btns">
+                <a href="collection.html" class="hero-btn-gold">Explore Collection</a>
+                <a href="aboutus.html" class="hero-btn-outline">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         2) BRANDS 
+    ========================================= -->
+    <section class="brands-strip">
+        <a href="rolex.html" class="brand-item">ROLEX</a>
+        <a href="patek philippe.html" class="brand-item">PATEK PHILIPPE</a>
+        <a href="cartier.html" class="brand-item">CARTIER</a>
+    </section>
+
+    <!-- =========================================
+         3) WHY CHOOSE US
+    ========================================= -->
+    <section class="why-section">
+        <span class="section-tag">WHY CHOOSE US</span>
+        <h2 class="section-title">Crafted To Perfection</h2>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <i class="fa-solid fa-gem"></i>
+                <h3>Authentic Pieces</h3>
+                <p>Every watch is 100% genuine, sourced directly from authorized dealers worldwide.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-gears"></i>
+                <h3>Precision Movement</h3>
+                <p>Swiss-made mechanisms engineered for accuracy that lasts a lifetime.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>2 Year Warranty</h3>
+                <p>Full coverage on every purchase, so you can buy with complete confidence.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Worldwide Shipping</h3>
+                <p>Secure, insured delivery to your doorstep no matter where you are.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+         4) FEATURED WATCHES
+    ========================================= -->
+    <section class="featured-section">
+        <span class="section-tag">OUR COLLECTION</span>
+        <h2 class="section-title">Featured Timepieces</h2>
+
+        <div class="cards-container">
+
+            <div class="watch-card">
+                <div class="card-face card-front">
+                    <img src="img/ROLEX/1c5e4808-6d6b-4fdd-9248-8e3dccc37bcb.jpeg">
+                    <h3>Rolex Submariner</h3>
+                    <p>$12,500</p>
+                </div>
+                <div class="card-face card-back">
+                    <h3>Rolex Submariner</h3>
+                    <ul>
+                        <li>41mm Case</li>
+                        <li>Automatic Movement</li>
+                        <li>300m Water Resistance</li>
+                        <li>Sapphire Crystal</li>
+                    </ul>
+                    <div class="price">$12,500</div>
+                    <button class="add-cart" data-name="Rolex Submariner" data-price="$12,500" data-image="img/ROLEX/1c5e4808-6d6b-4fdd-9248-8e3dccc37bcb.jpeg">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="watch-card">
+                <div class="card-face card-front">
+                    <img src="img/Patek Philippe/301b0dde-c0e5-49b8-ad9c-fc878c05dea2.jpeg">
+                    <h3>Patek Philippe Nautilus</h3>
+                    <p>$12,500</p>
+                </div>
+                <div class="card-face card-back">
+                    <h3>Patek Philippe Nautilus</h3>
+                    <ul>
+                        <li>Automatic</li>
+                        <li>Steel Case</li>
+                        <li>Date Display</li>
+                        <li>Iconic Design</li>
+                    </ul>
+                    <div class="price">$12,500</div>
+                    <button class="add-cart" data-name="Patek Philippe Nautilus-4567" data-price="$12,500" data-image="img/Patek Philippe/301b0dde-c0e5-49b8-ad9c-fc878c05dea2.jpeg">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="watch-card">
+                <div class="card-face card-front">
+                    <img src="img/Cartier/4f718854-7561-44db-b7a8-6e3781da5920.jpeg">
+                    <h3>Cartier Santos</h3>
+                    <p>$21,800</p>
+                </div>
+                <div class="card-face card-back">
+                    <h3>Cartier Santos</h3>
+                    <ul>
+                        <li>Automatic</li>
+                        <li>Stainless Steel</li>
+                        <li>Iconic Square Case</li>
+                        <li>Sapphire Crystal</li>
+                    </ul>
+                    <div class="price">$21,800</div>
+                    <button class="add-cart" data-name="Cartier Santos" data-price="$21,800" data-image="img/Cartier/4f718854-7561-44db-b7a8-6e3781da5920.jpeg">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="view-all-wrap">
+            <a href="collection.html" class="hero-btn-gold">View Full Collection</a>
+        </div>
+    </section>
+
+    <!-- =========================================
+         5) TESTER
+    ========================================= -->
+    <section class="testimonial-section">
+        <span class="section-tag">CUSTOMER REVIEWS</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <p>"Amazing quality and fast delivery. The watch looks even better in person. Highly recommended!"</p>
+                <h4>Ahmed Ali</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <p>"Exceptional service from start to finish. My Patek Philippe arrived perfectly packaged."</p>
+                <h4>MASSA KHOJA</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+                <p>"Timeless design and super elegant. CHRONOVA is now my go-to for luxury watches."</p>
+                <h4>TAREK SALAMA</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+         6) CALL
+    ========================================= -->
+    <section class="cta-section">
+        <h2>Find Your Perfect Timepiece Today</h2>
+        <p>Explore our full collection of authentic luxury watches from the world's finest brands.</p>
+        <a href="collection.html" class="hero-btn-gold">Shop Now</a>
+    </section>
+
+<footer class="footer">
+ <div>
+  <h2>CHRONOVA</h2>
+  <p>Luxury watches. Timeless elegance.</p>
+ </div>
+ <div>
+  <h3>Contact</h3>
+  <p><i class="fa-solid fa-phone"></i> +963 980 364 320</p>
+  <p><i class="fa-solid fa-envelope"></i> tareksalama2006@google.com</p>
+ </div>
+ <div class="social">
+ <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+ <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+ </div>
+ <p>© 2026 CHRONOVA. All Rights Reserved.</p>
+</footer>
+<script src="cart.js"></script>
+</body>
+</html>

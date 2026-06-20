@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT-US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo/file_00000000a48c71f48dfceedc4e0fcb00.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+      <ul class="menu">
+        <li class="brand"><i class="fa-solid fa-clock"></i> CHRONOVA</li>
+
+        <li>
+            <a href="home.html" class="active" target="_blank"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li>
+            <a href="collection.html"><i class="fa-solid fa-gem"></i> Collection <span class="arrow">▾</span></a>
+
+            <ul class="submenu">
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="patek philippe.html">Patek Philipe</a></li>
+                <li><a href="cartier.html">cartier</a></li>
+                
+            </ul>
+        </li>
+
+       
+
+        <li>
+            <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        </li>
+
+        <li>
+            <a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About As</a>
+        </li>
+
+        <li>
+            <a href="contactus.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li>
+
+    <li class="cart" onclick="window.location.href='buy.html'"><i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span></li>
+    </ul>
+    <section class="contact">
+
+    <div class="contact-text">
+
+        <span>GET IN TOUCH</span>
+
+        <h1>CONTACT <b>US</b></h1>
+
+        <p>
+            Have questions or need help?
+            Reach out to us anytime and our team
+            will get back to you as soon as possible.
+        </p>
+
+        <div class="contact-box">
+            <i class="fa-solid fa-phone"></i>
+
+            <div class="contact-info">
+                <h3>PHONE</h3>
+                <p>+963 996 851 529</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div class="contact-info">
+                <h3>EMAIL</h3>
+                <p>tareksalamazead2006@gamil.com</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div class="contact-info">
+                <h3>ADDRESS</h3>
+                <p>Syria - Tartous</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-form">
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <input type="text" placeholder="Subject">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button class="done">Send Message</button>
+
+    </div>
+
+    <div class="clr"></div>
+
+</section>
+
+<script>
+    let buttons = document.querySelectorAll('.done');
+
+buttons.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+        window.location.href = 'end by.html';
+
+    });
+
+});
+</script>
+<footer class="footer">
+ <div>
+  <h2>CHRONOVA</h2>
+  <p>Luxury watches. Timeless elegance.</p>
+ </div>
+ <div>
+    
+  <h3>Contact</h3>
+  <p><i class="fa-solid fa-phone"></i> +963 980 364 320</p>
+  <p><i class="fa-solid fa-envelope"></i> tareksalama2006@google.com</p>
+ </div>
+ 
+ <div class="social">
+ <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+ <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+ </div>
+ <p>© 2026 CHRONOVA. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

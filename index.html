@@ -1,32 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fascinate+Inline&family=Noto+Sans+Ol+Chiki:wght@400..700&family=Orbitron:wght@400..900&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> chronova Login</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="img/logo/file_00000000a48c71f48dfceedc4e0fcb00.jpg">
 </head>
-<body id="log">
-   <h1 class="log1">welcome To Laptop shope</h1> 
-<img class="log2" src="image/logo.jpeg" alt="logo">
-<div class="log3">
-<h1>LOG IN</h1>
-name:<input type="text" placeholder="Username">
-<br><br><br><br><br>
-password: <input type="password" placeholder="Password"> 
-<br> <br><br><br>
-forget password? <a href="#">click here</a>
-<button id="loginBtn">LOG IN</button>
+<body>
+
+<div class="container">
+
+    <div class="left-side">
+
+        <h1>CHRONOVA LOGIN</h1>
+       
+        <p>Luxury Watches</p>
+
+        <div class="watch-box">
+            <img src="img/logo/file_00000000a48c71f48dfceedc4e0fcb00.jpg" alt="watch">
+        </div>
+
+        <p class="quote">
+            Elegance is not about being noticed,<br>
+            it's about being remembered.
+        </p>
+    </div>
+
+    <div class="right-side">
+
+        <div class="login-card">
+
+            <h3>WELCOME BACK</h3>
+            <h2>Sign In To Your Account</h2>
+
+            <form>
+
+                <label>Email Address</label>
+                <div class="input-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input id="email" type="email" placeholder="Enter your email">
+                     <span class="icon">✉</span>
+                </div>
+
+                <label>Password</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input id="password" type="password" placeholder="Enter your password">
+                      <span class="icon">🔒</span>
+                </div>
+
+                <div class="options">
+                    <span>
+                        <input type="checkbox">
+                        Remember Me
+                    </span>
+
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+               <button type="button" class="btn" id="loginBtn">Sign In</button>
+
+            </form>
+
+            <div class="or">
+                <span>OR CONTINUE WITH</span>
+            </div>
+
+            <div class="social">
+                <button id="gbtn">google</button>
+                <button id="fbtn">Facebook</button>
+                <button id="abtn">Apple</button>
+            </div>
+
+            <p class="register">
+                Don't have an account?
+                <a href="#">Create Account</a>
+            </p>
+
+        </div>
+
+    </div>
 
 </div>
-<script>
-    document.getElementById('loginBtn').addEventListener('click', function() {
-    window.location.href = 'home page.html';
-});
-</script>
+    <!-- قسم التحميل -->
+    <div class="loader-overlay" id="loaderOverlay">
+
+        <div class="clock">
+            <div class="hand hour"   id="hourHand"></div>
+            <div class="hand minute" id="minuteHand"></div>
+
+
+            
+            <div class="center-dot"></div>
+            <div class="mark m12"></div>
+            <div class="mark m3"></div>
+            <div class="mark m6"></div>
+            <div class="mark m9"></div>
+        </div>
+
+        <p class="loader-text">Signing In...</p>
+
+    </div>
+  <script src="script.js"></script>
+
 </body>
 </html>

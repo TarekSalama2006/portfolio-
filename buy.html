@@ -1,128 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lap Zone Checkout</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chronova Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
 
-    <div class="background"></div>
 
-    <header class="navbar">
-        <div class="logo">
-            <span class="white">LAP</span>
-            <span class="yellow">ZONE</span>
-        </div>
+<ul class="menu">
 
-        <nav>
-            <a href="home page.html">Home</a>
-            <a href="laptop page.html">Laptops</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="laptop page.html">Laptop</a>
-            <a href="phone page.html">Phone</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about us.html">About Us</a>
-        </nav>
-         <div class="icons">
-   <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> 
-   <a href="login.html"><i class="fa-regular fa-user"></i></a> 
-    <a href="buy.html"><i class="fa-solid fa-cart-shopping"></i></a>
-  </div>
-    </header>
 
-    <section class="checkout-container">
+<li class="brand">
+<i class="fa-solid fa-clock"></i>
+CHRONOVA
+</li>
 
-        <div class="left-side">
 
-            <div class="card">
-                <h2>Billing Details</h2>
+<li>
+<a href="home.html">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+</li>
 
-                <div class="input-group">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Phone Number">
-                </div>
 
-                <input type="email" placeholder="Email Address">
+<li>
+<a href="collection.html">
+<i class="fa-solid fa-gem"></i>
+Collection
+</a>
+</li>
 
-                <div class="input-group">
-                    <input type="text" placeholder="Country">
-                    <input type="text" placeholder="City">
-                </div>
 
-                <input type="text" placeholder="Street Address">
+<li>
+<a href="gallery.html">
+<i class="fa-solid fa-images"></i>
+Gallery
+</a>
+</li>
 
-                <textarea placeholder="Additional Notes"></textarea>
 
-                <button class="btn">
-                    Continue To Payment
-                </button>
-            </div>
+<li>
+<a href="aboutus.html">
+<i class="fa-solid fa-circle-info"></i>
+About Us
+</a>
+</li>
 
-        </div>
 
-        <div class="right-side">
+<li>
+<a href="contactus.html">
+<i class="fa-solid fa-envelope"></i>
+Contact
+</a>
+</li>
 
-            <div class="card">
-                <h2>MY BA</h2>
 
-                <div class="product">
-                    <img src="image/asus.jpeg">
+<li class="cart">
 
-                    <div>
-                        <h3>ASUS ROG Laptop</h3>
-                        <p>Gaming Laptop</p>
-                    </div>
+<i class="fa-solid fa-cart-shopping"></i>
 
-                    <span>$1299</span>
-                </div>
+<span id="cartCount">0</span>
 
-                <div class="product">
-                    <img src="image/gamin mouse 1.jpeg">
+</li>
 
-                    <div>
-                        <h3>Gaming Mouse</h3>
-                        <p>Accessories</p>
-                    </div>
 
-                    <span>$49</span>
-                </div>
+</ul>
 
-                <div class="total">
-                    <div>
-                        <p>Subtotal</p>
-                        <span>$1348</span>
-                    </div>
 
-                    <div>
-                        <p>Shipping</p>
-                        <span>Free</span>
-                    </div>
 
-                    <div class="final-total">
-                        <h3>Total</h3>
-                        <h2>$1348</h2>
 
-                             <button id="btn" class="btn">buy now</button>
-                    </div>
-                
-                </div>
-      
-            </div>
-        
-        </div>
 
-    </section>
+<section class="checkout-container">
+
+
+<div class="left-side">
+
+
+<div class="card">
+
+
+<h2>Billing Details</h2>
+
+
+<div class="input-group">
+
+<input type="text" placeholder="Full Name">
+
+<input type="text" placeholder="Phone Number">
+
+</div>
+
+
+<input type="email" placeholder="Email Address">
+
+
+<div class="input-group">
+
+<input type="text" placeholder="Country">
+
+<input type="text" placeholder="City">
+
+</div>
+
+
+
+<input type="text" placeholder="Street Address">
+
+
+<textarea placeholder="Additional Notes"></textarea>
+
+
+
+<button class="btn">
+
+Continue To Payment
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="right-side">
+
+
+<div class="card">
+
+
+<h2>MY BAG</h2>
+
+
+
+<div id="cart-items">
+
+
+<!-- المنتجات تظهر هون بالجافا -->
+
+
+</div>
+
+
+
+
+<div class="total">
+
+
+<div>
+
+<p>Subtotal</p>
+
+<span id="subtotal">
+$0
+</span>
+
+</div>
+
+
+
+<div>
+
+<p>Shipping</p>
+
+<span>
+Free
+</span>
+
+</div>
+
+
+
+<div class="final-total">
+
+
+<h3>Total</h3>
+
+
+<h2 id="total">
+$0
+</h2>
+
+
+
+<button id="btn" class="btn">
+
+Buy Now
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer class="footer">
+
+
+<div>
+
+<h2>CHRONOVA</h2>
+
+<p>
+Luxury watches. Timeless elegance.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>Contact</h3>
+
+
+<p>
+<i class="fa-solid fa-phone"></i>
++963 980 364 320
+</p>
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+tareksalama2006@google.com
+
+</p>
+
+
+</div>
+
+
+
+
+ <div class="social">
+ <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+ <a href="https:// www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+ </div>
+
+
+
+<p>
+© 2026 CHRONOVA. All Rights Reserved.
+</p>
+
+
+
+</footer>
+
+
+
+
+
+<script src="cart.js"></script>
+
+
+
 <script>
 
-       document.getElementById('btn').addEventListener('click', function() {
-    window.location.href = 'end by.html';    
-});
+
+document.getElementById("btn").onclick=function(){
+
+window.location.href="end by.html";
+
+}
+
+
+
 </script>
+
+
+
 </body>
+
 </html>

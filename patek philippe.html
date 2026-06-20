@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLEX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo/file_00000000a48c71f48dfceedc4e0fcb00.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <ul class="menu">
+        <li class="brand"><i class="fa-solid fa-clock"></i> CHRONOVA</li>
+
+        <li>
+            <a href="home.html" class="active" target="_blank"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li>
+            <a href="collection.html"><i class="fa-solid fa-gem"></i> Collection <span class="arrow">▾</span></a>
+
+            <ul class="submenu">
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="patek philippe.html">Patek Philipe</a></li>
+                <li><a href="cartier.html">cartier</a></li>
+            </ul>
+        </li>
+
+       
+
+        <li>
+            <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        </li>
+
+        <li>
+            <a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About As</a>
+        </li>
+
+        <li>
+            <a href="contactus.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li>
+<li class="cart" onclick="goCart()">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</li>
+    </ul>
+</header>
+
+
+<!-- 1 -->
+<section class="hero">
+<img src="img/back/file_00000000abb071f488628ef2992d2afc (1).jpg" alt="">
+</section>
+
+<h2 class="section-title">PATEK PHILIPPE COLLECTION</h2>
+
+<div class="cards-container">
+
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/301b0dde-c0e5-49b8-ad9c-fc878c05dea2.jpeg">
+<h3>Patek Philippe Nautilus-4567</h3>
+<p>$12,500</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe Nautilus-4567</h3>
+<ul>
+<li>41mm Case</li>
+<li>Automatic Movement</li>
+<li>300m Water Resistance</li>
+<li>Sapphire Crystal</li>
+</ul>
+<div class="price">$12,500</div>
+<button 
+class="add-cart"
+data-name="Rolex"
+data-price="5000"
+data-image="img/ROLEX/watch.jpg">
+
+Add To Cart
+
+</button>
+</div>
+</div>
+
+<!-- 2 -->
+
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/3e485f5d-2a66-4a3a-9b4c-a43a41240238.jpeg">
+<h3>Patek Philippe Nautilus-5514A</h3>
+<p>$24,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe Nautilus-5514A</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$24,800</div>
+<button class="add-cart" data-name="Patek Philippe Nautilus-4567" data-price="$12,500" data-image="img/Patek Philippe/301b0dde-c0e5-49b8-ad9c-fc878c05dea2.jpeg">Add To Cart</button>
+</div>
+</div>
+
+<!-- 3 -->
+
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/4f2a1cb2-c615-4f9c-85da-6007d26e6d19.jpeg">
+<h3>Patek Philippe grand Complications 5678</h3>
+<p>$76,750</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe grand Complications 5678</h3>
+<ul>
+<li>41mm Case</li>
+<li>Automatic</li>
+<li>Date Display</li>
+<li>Sapphire Glass</li>
+</ul>
+<div class="price">$13,750</div>
+<button class="add-cart" data-name="Patek Philippe grand Complications 5678" data-price="$76,750" data-image="img/Patek Philippe/4f2a1cb2-c615-4f9c-85da-6007d26e6d19.jpeg">Add To Cart</button>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/5352eef3-fbf8-4c1e-a0c6-78bc3c8a7a7e.jpeg">
+<h3>Patek Philippe Nautilus-6989S</h3>
+<p>$24,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe Nautilus-6989S</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$24,800</div>
+<button class="add-cart" data-name="Patek Philippe Nautilus-6989S" data-price="$24,800" data-image="img/Patek Philippe/5352eef3-fbf8-4c1e-a0c6-78bc3c8a7a7e.jpeg">Add To Cart</button>
+</div>
+</div>
+
+
+<!-- 5 -->
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/650d611b-5cd2-4468-b904-b99bc9ff5f33.jpeg">
+<h3>Patek Philippe Nautilus-5514A</h3>
+<p>$42,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe Nautilus-5514A</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$24,800</div>
+<button class="add-cart" data-name="Patek Philippe Nautilus-5514A" data-price="$42,800" data-image="img/Patek Philippe/650d611b-5cd2-4468-b904-b99bc9ff5f33.jpeg">Add To Cart</button>
+</div>
+</div>
+
+
+<!-- 6 -->
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/79998857-afd6-466b-a033-e0cfd9a5985e.jpeg">
+<h3>Patek Philippe-Twenty-4</h3>
+<p>$67,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe-Twenty-4</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$24,800</div>
+<button class="add-cart" data-name="Patek Philippe-Twenty-4" data-price="$67,800" data-image="img/Patek Philippe/79998857-afd6-466b-a033-e0cfd9a5985e.jpeg">Add To Cart</button>
+</div>
+</div>
+<!-- 7 -->
+
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/79998857-afd6-466b-a033-e0cfd9a5985e.jpeg">
+<h3>Patek Philippe-cubitus</h3>
+<p>$53,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe-cubitus</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$24,800</div>
+<button class="add-cart" data-name="Patek Philippe-cubitus" data-price="$53,800" data-image="img/Patek Philippe/79998857-afd6-466b-a033-e0cfd9a5985e.jpeg">Add To Cart</button>
+</div>
+</div>
+
+
+<!-- 8 -->
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/b987c2bb-c913-4107-91d7-091de5c0c567.jpeg">
+<h3>Patek Philippe-travel Time</h3>
+<p>$59,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe-travel Time</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$24,800</div>
+<button class="add-cart" data-name="Patek Philippe-travel Time" data-price="$59,800" data-image="img/Patek Philippe/b987c2bb-c913-4107-91d7-091de5c0c567.jpeg">Add To Cart</button>
+</div>
+</div>
+
+
+<!-- 9 -->
+<div class="watch-card">
+<div class="card-face card-front">
+<img src="img/Patek Philippe/f5146a86-b738-4a8b-b781-6e602cf1d508.jpeg">
+<h3>Patek Philippe chronograph-5514A</h3>
+<p>$159,800</p>
+</div>
+<div class="card-face card-back">
+<h3>Patek Philippe chronograph-5514A</h3>
+<ul>
+<li>Chronograph</li>
+<li>Automatic</li>
+<li>Luxury Finish</li>
+<li>Premium Steel</li>
+</ul>
+<div class="price">$159,800</div>
+<button class="add-cart" data-name="Patek Philippe chronograph-5514A" data-price="$159,800" data-image="img/Patek Philippe/f5146a86-b738-4a8b-b781-6e602cf1d508.jpeg">Add To Cart</button>
+</div>
+</div>
+</div>
+
+<!-- end -->
+<footer class="footer">
+ <div>
+  <h2>CHRONOVA</h2>
+  <p>Luxury watches. Timeless elegance.</p>
+ </div>
+ <div>
+  <h3>Contact</h3>
+  <p><i class="fa-solid fa-phone"></i> +963 980364 320</p>
+  <p><i class="fa-solid fa-envelope"></i> tareksalama2006@google.com</p>
+ </div>
+ <div class="social">
+ <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+ <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+ </div>
+ <p>© 2026 CHRONOVA. All Rights Reserved.</p>
+</footer>
+<script src="cart.js"></script>
+    <script>
+
+
+// فتح صفحة السلة
+
+function goCart(){
+
+    window.location.href = "buy.html";
+
+}
+
+
+
+// تحديث رقم السلة
+
+function updateCartCount(){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+document.getElementById("cartCount").innerHTML = cart.length;
+
+
+}
+
+
+updateCartCount();
+
+
+
+</script>
+</body>
+</html>
